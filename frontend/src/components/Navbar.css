@@ -1,0 +1,126 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: var(--space-md) 0;
+    transition: all var(--transition-base);
+}
+
+/* Light navbar for home page (warm cream hero) */
+.navbar-home {
+    background: transparent;
+}
+
+.navbar-home .brand-desi {
+    color: var(--saffron);
+}
+
+.navbar-home .brand-tales {
+    color: var(--charcoal);
+}
+
+.navbar-home .nav-link {
+    color: var(--charcoal);
+    opacity: 0.7;
+}
+
+.navbar-home .nav-link:hover,
+.navbar-home .nav-link.active {
+    opacity: 1;
+    color: var(--saffron);
+}
+
+/* Scrolled state (all pages) */
+.navbar-home.scrolled {
+    background: rgba(255, 248, 240, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark navbar for inner pages */
+.navbar-solid {
+    background: rgba(45, 35, 25, 0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-solid .brand-desi {
+    color: var(--saffron);
+}
+
+.navbar-solid .brand-tales {
+    color: var(--cream);
+}
+
+.navbar-solid .nav-link {
+    color: var(--cream);
+    opacity: 0.8;
+}
+
+.navbar-solid .nav-link:hover,
+.navbar-solid .nav-link.active {
+    opacity: 1;
+    color: var(--saffron-light);
+}
+
+.navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    text-decoration: none;
+}
+
+.brand-icon {
+    font-size: 1.3rem;
+    color: var(--saffron);
+}
+
+.brand-text {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav-link {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--saffron);
+    border-radius: 1px;
+}
+
+.btn-nav {
+    padding: var(--space-sm) var(--space-lg) !important;
+    font-size: 0.9rem !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-links .nav-link {
+        display: none;
+    }
+}

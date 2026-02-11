@@ -1,0 +1,301 @@
+/* =============================================
+   Preview Page Styles
+   ============================================= */
+
+.preview-page {
+    background: var(--cream);
+}
+
+.preview-hero {
+    background: var(--gradient-hero);
+    padding: 120px 0 var(--space-4xl);
+    text-align: center;
+    color: var(--cream);
+}
+
+.preview-hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.book-badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-lg);
+    border-radius: var(--radius-full);
+    background: rgba(232, 147, 42, 0.15);
+    border: 1px solid rgba(232, 147, 42, 0.25);
+    color: var(--saffron-light);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: var(--space-lg);
+}
+
+.preview-hero h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: var(--space-sm);
+}
+
+.preview-subtitle {
+    font-size: 1.1rem;
+    color: var(--warm-gray-light);
+    margin-bottom: var(--space-lg);
+}
+
+.book-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+}
+
+.meta-item {
+    text-transform: capitalize;
+}
+
+.meta-divider {
+    opacity: 0.4;
+}
+
+/* === Preview Layout === */
+.preview-body {
+    padding: var(--space-3xl) var(--space-xl);
+}
+
+.preview-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: var(--space-2xl);
+    align-items: flex-start;
+}
+
+/* === Chapter Sidebar === */
+.chapter-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-title {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--warm-gray);
+    margin-bottom: var(--space-md);
+}
+
+.chapter-nav-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    margin-bottom: var(--space-xs);
+    border-left: 3px solid transparent;
+}
+
+.chapter-nav-item:hover {
+    background: white;
+}
+
+.chapter-nav-item.active {
+    background: white;
+    border-left-color: var(--saffron);
+    box-shadow: var(--shadow-sm);
+}
+
+.ch-num {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--saffron);
+    margin-bottom: 2px;
+}
+
+.ch-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--charcoal);
+}
+
+.sidebar-characters {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--cream-darker);
+}
+
+.char-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm) 0;
+}
+
+.char-avatar {
+    font-size: 1.8rem;
+}
+
+.char-name {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--charcoal);
+}
+
+.char-role {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--warm-gray);
+}
+
+/* === Book Reader === */
+.chapter-card {
+    padding: var(--space-3xl);
+}
+
+.chapter-header {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--cream-darker);
+}
+
+.chapter-label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--saffron);
+    margin-bottom: var(--space-sm);
+    display: block;
+}
+
+.chapter-title {
+    font-size: 2rem;
+    color: var(--charcoal);
+    margin-bottom: var(--space-sm);
+}
+
+.chapter-summary {
+    font-size: 1rem;
+    color: var(--warm-gray);
+    font-style: italic;
+}
+
+/* === Illustration Card === */
+.illustration-card {
+    background: linear-gradient(135deg, var(--cream-darker), rgba(232, 147, 42, 0.08));
+    border: 2px dashed var(--warm-gray-light);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+    text-align: center;
+}
+
+.illustration-inner {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.illust-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.illust-label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--saffron);
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.illust-notes {
+    font-size: 0.9rem;
+    color: var(--warm-gray);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* === Chapter Text === */
+.chapter-text {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--charcoal-light);
+}
+
+.chapter-text p {
+    margin-bottom: var(--space-lg);
+    text-indent: 1.5em;
+}
+
+.chapter-text p:first-child {
+    text-indent: 0;
+}
+
+.chapter-text p:first-child::first-letter {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    float: left;
+    line-height: 0.8;
+    margin-right: var(--space-sm);
+    margin-top: var(--space-xs);
+    color: var(--saffron);
+    font-weight: 800;
+}
+
+/* === Chapter Navigation === */
+.chapter-nav-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--cream-darker);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .preview-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .chapter-sidebar {
+        position: static;
+        display: flex;
+        overflow-x: auto;
+        gap: var(--space-sm);
+        padding-bottom: var(--space-md);
+    }
+
+    .sidebar-title,
+    .sidebar-characters {
+        display: none;
+    }
+
+    .chapter-nav-item {
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    .chapter-nav-item.active {
+        border-bottom-color: var(--saffron);
+        border-left: none;
+    }
+
+    .chapter-card {
+        padding: var(--space-xl);
+    }
+}
