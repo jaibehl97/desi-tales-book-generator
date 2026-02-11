@@ -7,7 +7,7 @@ export const BookPlanSchema = z.object({
     subtitle: z.string(),
     characterRegistry: z.array(z.object({
         fullName: z.string(),
-        nickname: z.string().optional(),
+        nickname: z.string(),
         age: z.string(),
         role: z.string(),
         relationship: z.string(),

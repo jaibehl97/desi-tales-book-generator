@@ -4,14 +4,14 @@
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
         "outDir": "./dist",
-        "rootDir": "./src",
+        "rootDir": "./backend",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true
     },
     "include": [
-        "src/**/*"
+        "backend/**/*"
     ],
     "exclude": [
         "node_modules",
